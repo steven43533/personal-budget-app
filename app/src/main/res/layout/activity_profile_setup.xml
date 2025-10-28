@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="24dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="center" android:gravity="center">
+
+        <TextView android:text="Profile Setup" android:textStyle="bold" android:textSize="22sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Age"
+            android:layout_marginTop="16dp" app:boxBackgroundMode="outline">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etAge" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Monthly Income"
+            android:layout_marginTop="12dp" app:boxBackgroundMode="outline">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etIncome" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Base costs (keep it short) -->
+        <TextView android:text="Base Monthly Costs" android:layout_marginTop="16dp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Rent"
+            app:boxBackgroundMode="outline">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etRent" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Food"
+            android:layout_marginTop="12dp" app:boxBackgroundMode="outline">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etFood" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Gas"
+            android:layout_marginTop="12dp" app:boxBackgroundMode="outline">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etGas" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Gym"
+            android:layout_marginTop="12dp" app:boxBackgroundMode="outline">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etGym" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="numberDecimal"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveProfile" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Save and Continue" android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>
